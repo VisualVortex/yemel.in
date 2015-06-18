@@ -1,0 +1,105 @@
+@charset "koi8-r";
+/* CSS Document */
+
+html, body, nav {
+	margin:0;
+	height: 100%;
+}
+.shapka { 
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #4CAF50;
+	z-index:2;
+}
+.shadow {
+	box-shadow: 0 1px 3px 1px hsla(0,100%,0%, 0.35);	
+	transition: all 0.3s .1s;
+}
+.shadow:hover {
+	box-shadow: 0 1px 10px 1px hsla(0,100%,0%, 0.5);
+}
+.pad {
+	padding-top: 70px;
+	/*padding-left: 21%;*/
+	transition: all 0.3s ease-out .1s;
+	margin: 0 21%;
+	z-index:3;
+}
+h1 {
+	padding: 13px;
+	margin:0;
+	color:white;
+}
+
+/* Навигация */
+ol{
+	padding:0;
+	margin-left:5px;
+	
+}
+li {
+	list-style-type: none;
+	background-color: #66BB6A;
+	border-bottom: solid 1px #81C784;
+	padding: 0 2px;
+}
+
+nav {
+	float:left;
+	background-color:#81C784;
+	transition: all 0.3s .1s;
+	position:fixed;
+	z-index: 1;
+	width: 20%;
+	max-width:230px;
+	padding-top: 70px;
+	padding-left: 3px;
+	overflow:hidden;
+	word-wrap:break-word;
+	color:white;	
+	}
+@media screen and (max-width: 1000px) {
+	nav {
+		width: 117px;
+		opacity: 0.9;	
+	}
+	.pad{
+	/*padding-left: 122px*/;
+	margin: 0 124px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	nav {
+		width: 12%;	
+		opacity: 0.9;	
+	}
+	.pad{
+	/*padding-left: 13%;*/
+	margin: 0 13%;
+	}
+}
+@media screen and (max-width: 600px) {
+	nav {
+		width: 10%;
+		color:#ccc;
+		opacity: 0.5;
+	}
+	.pad{
+	/*padding-left: 11%;*/
+	margin: 0 11%;
+	}
+}
+@media screen and (max-width: 500px) {
+	nav {
+		display:none;	 
+	}
+	.pad{
+		/*padding-left: 0;*/
+		margin: 1% 1%;
+	}
+}
+
+
+
